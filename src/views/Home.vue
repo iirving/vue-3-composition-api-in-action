@@ -4,6 +4,7 @@
   </div>
 </template>
 <script setup>
+
 import PostCard from "../components/PostCard.vue";
 import useResource from "../composables/useResource";
 
