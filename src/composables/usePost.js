@@ -1,3 +1,13 @@
+/**
+ * Composable function for managing posts.
+ * supperseded by useResource
+ * @returns {Object} An object containing reactive properties and methods for managing posts.
+ * @property {Ref<Array>} posts - A reactive reference to an array of posts.
+ * @property {Ref<Object>} post - A reactive reference to a single post.
+ * @property {Function} fetchAll - A function that fetches all posts from the API.
+ * @property {Function} getPost - A function that fetches a single post by its ID from the API.
+ */
+
 import { ref } from "vue";
 
 export default function usePost() {
@@ -15,13 +25,6 @@ export default function usePost() {
     post.value = await response.json();
   };
 
-  // const { $http } = useQuasar();
-  // const createPost = async (data) => {
-  //   return await $http.post("/posts", data);
-  // };
-  // const getPost = async (id) => {
-  //   return await $http.get(`/posts/${id}`);
-  // };
   return {
     posts,
     fetchAll,
