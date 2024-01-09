@@ -1,3 +1,9 @@
+/**
+ * Custom composable function for handling a resource.
+ *
+ * @param {string} resourceEndPoint - The endpoint of the resource.
+ * @returns {object} - An object containing reactive properties and methods for interacting with the resource.
+ */
 import { ref } from "vue";
 import usePageRequests from "./usePageRequests.js";
 
