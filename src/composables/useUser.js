@@ -1,6 +1,6 @@
 /**
  * A composable function for managing user data.
- * supperseded by useResource
+ * ! supperseded by useResource
  * @returns {Object} An object containing reactive user data and methods for fetching user data.
  */
 export default function useUser() {

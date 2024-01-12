@@ -1,6 +1,6 @@
 /**
  * Composable function for managing posts.
- * supperseded by useResource
+ * ! supperseded by useResource
  * @returns {Object} An object containing reactive properties and methods for managing posts.
  * @property {Ref<Array>} posts - A reactive reference to an array of posts.
  * @property {Ref<Object>} post - A reactive reference to a single post.
