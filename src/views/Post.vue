@@ -15,7 +15,6 @@ const { item: post, getItem: getPost } = useResource('posts');
 const postId = useRoute().params.id;
 getPost(postId)
 
-
 // user
 const { item: user, getItem: getUser } = useResource('users');
 watch(
@@ -25,6 +24,5 @@ watch(
     getUser(userId);
   }
 )
-
 
 </script>
